@@ -8,7 +8,7 @@
 
 body {
     max-width: 1920px;
-    background-image: linear-gradient(white, rgb(200, 200, 200));
+    background: rgb(255, 255, 255);
 }
 
 /* BARRA DE NAVEGACIÓN SUPERIOR ============================================================================*/
@@ -72,7 +72,7 @@ nav {
     text-align: left;
 }
 
-#input_correo, #input_pass {
+.contenedor-login #input_correo, .contenedor-login #input_pass {
     padding: 2px;
     font-size: 14px;
     border-radius: 0px;
@@ -94,6 +94,7 @@ nav {
     width: 80px;
     padding: 6px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 #btn_ingresar:hover, #btn_registro:hover {

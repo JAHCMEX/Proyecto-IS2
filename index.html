@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal para solicitud de laboratorios de la Universidad de Sonora">
+    <meta name="keywords" content="Solicitud, Laboratorios, UNISON">
+    <meta name="author" content="Guillermo Velazquez">
+
+    <base href="index.html">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Icono -->
+    <link rel="icon" type="image/png" href="media/img/logo_unison_110.png" />
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <title>Solicitud de laboratorios - Página principal - Universidad de Sonora</title>
+</head>
+<body>
+
+    <nav>
+        <div class="contenedor-logo_buho">
+            <a href="index.html" target="_blank" class="nav-img">
+                <img src="media/img/logo_unison_buho_con_leyenda.png" alt="logo unison buho" title="logo unison buho">
+            </a>
+            <span class="nav-img-text">Juntos contra el COVID-19.</span>
+        </div>
+
+        <div class="contenedor-login">
+            <form>
+                <label for="username" id="label_correo">Correo electrónico:</label>
+                <label for="password" id="label_pass">Contraseña:</label>
+                <br>
+                <div class="separacion_px"></div>
+                <input type="email" name="correo" placeholder="Correo institucional" id="input_correo">
+                <input type="text" name="password" placeholder="Contraseña" id="input_pass">
+                <input type="submit" value="Ingresar" id="btn_ingresar"></input>
+                <button onclick="location.href='registro.html'" type="button" id="btn_registro">Registro</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="clearfix"></div>
+
+    <header>
+        <div class="contenedor-leyenda-y-logo">
+            <a href="https://www.unison.mx/">
+            <img src="media/img/logo_unison_110.png" alt="logo unison">
+            </a>
+            <div class="contenedor-leyenda">
+                <span class="titulo">Portal de solicitud de Laboratorios</span>
+                <br>
+                <span class="leyenda-universidad">Universidad de Sonora</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="slide-wrap">
+        <ul class="slider">
+            <li><img src="media/img/slider/slider1.png" alt=""></li>
+            <li><img src="media/img/slider/slider2.png" alt=""></li>
+            <li><img src="https://picsum.photos/id/1/1920/490" alt=""></li>
+            <li><img src="https://picsum.photos/id/2/1920/490" alt=""></li>
+            <li><img src="https://picsum.photos/id/3/1920/490" alt=""></li>
+            <li><img src="https://picsum.photos/id/4/1920/490" alt=""></li>
+        </ul>
+    </div>
+
+
+    <!-- Script del slider de imagenes -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                mode: 'fade',
+                auto: 'true',
+                pause: 2000,
+                speed: 1000,
+                autoHover: true
+            })
+        })
+    </script>
+
+</body>
+</html>

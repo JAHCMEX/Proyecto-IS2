@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registro de usuario, solicitud de laboratorios de la Universidad de Sonora">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <!-- Icono -->
+    <link rel="icon" type="image/png" href="media/img/logo_unison_110.png" />
+    
+    <title>Registro - Solicitud de Laboratorios - Universidad de Sonora</title>
+</head>
+<body>
+
+    <nav>
+        <div class="contenedor-logo_buho">
+            <a href="index.html">
+                <img src="media/img/logo_unison_buho_con_leyenda.png" alt="logo unison buho" title="logo unison buho">
+            </a>
+            <span>Portal de Solicitud de Laboratorios. Registro de usuarios.</span>
+        </div>
+    </nav>
+
+    <div class="contenedor-titulo">
+        <h2>Por favor, llene todos los campos para completar su registro.</h2>
+    </div>
+
+    <main class="campos-registro">
+        <form action="" autocomplete="off">
+
+            <fieldset>
+                <legend>Correo y contraseña</legend>
+
+                <label for="input_correoi">Correo Institucional:</label><br>
+                <input type="email" id="input_correoi" name="input_correoi"><br>
+                
+                <label for="input_correoalt">Correo electrónico alternativo:</label><br>
+                <input type="email" id="input_correoalt" name="input_correoalt"><br>
+                
+                <label for="input_pass">Contraseña:</label><br>
+                <input type="password" id="input_pass" name="input_pass"><br>
+                
+                <label for="input_pass2">Repita su contraseña:</label><br>
+                <input type="password" id="input_pass2" name="input_pass2"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos personales</legend>
+                
+                <label for="input_apellidop" autocapitalize="characters">Apellido paterno:</label><br>
+                <input type="email" id="input_apellidop" name="input_apellidop" required><br>
+                
+                <label for="input_apellidom" autocapitalize="characters">Apellido materno:</label><br>
+                <input type="email" id="input_apellidom" name="input_apellidom" required><br>
+
+                <label for="input_nombre" autocapitalize="characters">Nombre(s):</label><br>
+                <input type="email" id="input_nombre" name="input_nombre" required><br>
+                
+                <label for="input_fechan">Fecha de nacimiento:</label><br>
+                <input type="date" id="input_fechan" name="input_fechan" required><br>
+
+                <label for="input_sexo">Seleccione su sexo:</label><br>
+                <input type="radio" id="masculino" name="input_sexo" value="masculino" required>
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="femenino" name="input_sexo" value="masculino" required>
+                <label for="femenino">Femenino</label><br>
+                <input type="radio" id="otro" name="input_sexo" value="otro" required>
+                <label for="otro">Otro</label><br>
+
+                <label for="input_telefono">Número de telefono:</label><br>
+                <input type="tel" id="input_telefono" name="input_telefono" required>
+            </fieldset>
+
+            <input type="submit" value="Enviar y registrarse">
+        </form>
+    </main>
+
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+.contenedor-titulo {
+    margin: auto;
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.contenedor-titulo h2 {
+    text-align: left;
+    font-size: 30px;
+    font-family: "Calibri";
+    text-align: center;
+}
+
+main.campos-registro {
+    max-width: 40%;
+    margin: auto;
+    padding: 1em 5em;
+    /* border: 1px solid black; */
+}
+
+main.campos-registro fieldset {
+    padding: 10px 40px;
+    border-radius: 0.3em;
+    margin-bottom: 25px;
+}
+
+main.campos-registro fieldset legend {
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
